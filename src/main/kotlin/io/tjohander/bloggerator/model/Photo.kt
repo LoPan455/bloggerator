@@ -1,4 +1,4 @@
-package io.tjohander.fakeapistarter.model
+package io.tjohander.bloggerator.model
 
 data class Photo(
     val albumId: Int = 0,

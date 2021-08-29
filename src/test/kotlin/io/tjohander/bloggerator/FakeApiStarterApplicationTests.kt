@@ -1,4 +1,4 @@
-package io.tjohander.fakeapistarter
+package io.tjohander.bloggerator
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

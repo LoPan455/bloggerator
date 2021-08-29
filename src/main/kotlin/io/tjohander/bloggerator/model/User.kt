@@ -1,6 +1,10 @@
-package io.tjohander.fakeapistarter.model
+package io.tjohander.bloggerator.model
+
+import org.springframework.data.annotation.Id
 
 data class User(
+    @Id
+    val id: String? = null,
     val name: String? = null,
     val username: String? = null,
     val email: String? = null,

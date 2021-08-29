@@ -1,4 +1,4 @@
-package io.tjohander.fakeapistarter.model
+package io.tjohander.bloggerator.model
 
 data class Company(
     val name: String? = null,
