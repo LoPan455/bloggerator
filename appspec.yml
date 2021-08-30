@@ -60,13 +60,13 @@ hooks:
   #   in the script specified in "location" starting from the root of the
   #   revision's file bundle.
   ApplicationStop:
-    - location: stop.sh
+    - location: /tmp/stop.sh
       timeout: 300
       runas: ec2-user
   # During the ApplicationStart deployment lifecycle event, run the commands
   #   in the script specified in "location".
   ApplicationStart:
-    - location: start.sh
+    - location: /tmp/start.sh
       timeout: 300
       runas:  ec2-user
   # During the ValidateService deployment lifecycle event, run the commands
