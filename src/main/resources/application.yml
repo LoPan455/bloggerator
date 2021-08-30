@@ -1,7 +1,17 @@
 spring:
   data:
     mongodb:
-      uri: "mongodb://root:example@localhost:27017"
+      uri: ${MONGO_URI}
       database: "bloggerator"
 api:
   base-url: https://jsonplaceholder.typicode.com/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "env,beans"
+  endpoint:
+    shutdown:
+      enabled: true

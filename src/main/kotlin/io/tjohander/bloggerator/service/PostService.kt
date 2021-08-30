@@ -20,6 +20,8 @@ class PostService(
         object : ParameterizedTypeReference<List<Post>> () {}
     ).body
 
-    fun getPosts(): List<Post> =
-        postRepository.findAll()
+    fun getPosts(): List<Post> {
+        println(System.getenv("JAVA_HOME"))
+        return postRepository.findAll()
+    }
 }
