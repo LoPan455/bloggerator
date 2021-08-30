@@ -60,18 +60,18 @@ hooks:
   #   in the script specified in "location" starting from the root of the
   #   revision's file bundle.
   ApplicationStop:
-    - location: curl --request POST --url http://localhost:8080/actuator/shutdown
+    - location: stop.sh
       timeout: 300
       runas: ec2-user
   # During the ApplicationStart deployment lifecycle event, run the commands
   #   in the script specified in "location".
   ApplicationStart:
-    - location: java -jar build/libs/bloggerator.jar
+    - location: start.sh
       timeout: 300
       runas:  ec2-user
   # During the ValidateService deployment lifecycle event, run the commands
   #   in the script specified in "location".
   ValidateService:
-    - location: curl --request GET --url http://localhost:8080/actuator/health
+    - location: validate.sh
       timeout: 300
       runas: ec2-user
