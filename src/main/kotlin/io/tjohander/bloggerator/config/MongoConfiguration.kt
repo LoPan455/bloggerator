@@ -12,7 +12,6 @@ import org.springframework.data.mongodb.config.AbstractMongoClientConfiguration
 @Configuration
 class MongoConfiguration(
     @Value("\${spring.data.mongodb.database}") private val dbname: String,
-//    @Value("\${spring.data.mongodb.uri}") private val mongoUri: String
 ) : AbstractMongoClientConfiguration() {
 
     @Bean
