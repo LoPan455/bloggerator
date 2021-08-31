@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /home/ec2-user/app/build/libs
-java -jar bloggerator.jar > /dev/null 2> /dev/null < /dev/null &
+nohup java -jar bloggerator.jar > /var/log/bloggerator.log 2>&1 &
 #./gradlew bootRun
