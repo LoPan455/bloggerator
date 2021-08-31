@@ -10,17 +10,17 @@ permissions:
 hooks:
   ApplicationStop:
     - location: /stop.sh
-      timeout: 300
+      timeout: 20
       runas: ec2-user
   # During the ApplicationStart deployment lifecycle event, run the commands
   #   in the script specified in "location".
   ApplicationStart:
     - location: /start.sh
-      timeout: 300
+      timeout: 30
       runas:  ec2-user
   # During the ValidateService deployment lifecycle event, run the commands
   #   in the script specified in "location".
   ValidateService:
     - location: /validate.sh
-      timeout: 300
+      timeout: 20
       runas: ec2-user
