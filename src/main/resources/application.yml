@@ -16,6 +16,9 @@ management:
   endpoint:
     shutdown:
       enabled: true
+  git:
+    info:
+      mode: full
 info:
   app:
     name: "Bloggerator"
