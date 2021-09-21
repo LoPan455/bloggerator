@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo systemctl start bloggerator.service
+sudo systemctl stop bloggerator.service
