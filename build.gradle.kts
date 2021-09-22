@@ -5,7 +5,6 @@ plugins {
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
     kotlin("jvm") version "1.5.21"
     kotlin("plugin.spring") version "1.5.21"
-    id("com.gorylenko.gradle-git-properties") version "2.3.1"
 }
 
 java.sourceCompatibility = JavaVersion.VERSION_11
