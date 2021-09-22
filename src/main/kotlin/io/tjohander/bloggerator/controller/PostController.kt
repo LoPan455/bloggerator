@@ -14,6 +14,6 @@ class PostController(
 
     @RequestMapping("/")
     fun getPosts(): List<Post> {
-        return postService.getPosts().take(3)
+        return postService.getPosts().take(2)
     }
 }
